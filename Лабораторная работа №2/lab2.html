@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
+<html lang="ru"><head>
 <meta charset="utf-8">
 <title>Таблицы</title>
 <style>
@@ -18,38 +17,70 @@ td, th {
 </head>
 <body>
 	<table>
-		<caption>1-й шаблон таблицы</caption>
-		<tbody><td><th>1</th></td>
-            
+      
+		<caption>1-я таблица</caption>
+		<tbody><tr>
+<th rowspan="2">1
+</th>
+<td colspan="2">2
+</td>
+    </tr>
+    <tr>
+<td>5
+</td>
+<td>6
+</td>
+</tr>
+</tbody>
+	</table>
+	<table>
+		<caption>2-я таблица</caption>
+		<tbody>
 		<tr>
-			<th>1</th>
-			<td>2</td>
-			<td>3</td>
+			<th colspan="2">1</th>
+			
 		</tr>
 		<tr>
-			<th>4</th>
-			<td>5</td>
+			<td rowspan="2">3</td>
+			<td>4</td>
+		</tr>
+		<tr>
 			<td>6</td>
+			
 		</tr>
 		</tbody>
 	</table>
-
-	<table>
-		<caption>2-й шаблон таблицы</caption>
+<table>
+		<caption>3-я таблица</caption>
 		<tbody>
 		<tr>
-			<th>1</th>
-			<th>2</th>
+			<td>1</td>
+			
+		<td rowspan="2">2</td></tr>
+		<tr>
+			<td>3</td>
+			
+		</tr>
+		<tr>
+			<td colspan="2">5</td>
+			
+		</tr>
+		</tbody>
+	</table>
+	<table>
+		<caption>4-я таблица</caption>
+		<tbody>
+		<tr>
+			<th colspan="2">1</th>
+			
 		</tr>
 		<tr>
 			<td>3</td>
 			<td>4</td>
 		</tr>
 		<tr>
-			<td>5</td>
-			<td>6</td>
+			<td colspan="2">5</td>
+			
 		</tr>
 		</tbody>
-	</table>
-</body>
-</html>
+	</table></body></html>
