@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="Awesome/css/font-awesome.min.css">
 		<title>Оформление вертикального меню</title>
-		<style>			
+		<style>
             .menu li li:before {
                     font-family: FontAwesome;
                     content: "\f192";
@@ -59,12 +59,14 @@
 
 			.menu li li { 
                     margin-left: -20px;
-					
+					    display: none;
 			}
-			.menu li a:hover {
-					
+
+
+    		.menu  ul li:hover  li {
+					display:block;
 			}
-	</style>
+    </style>
 </head>
 <body>
 	<nav class="menu">
