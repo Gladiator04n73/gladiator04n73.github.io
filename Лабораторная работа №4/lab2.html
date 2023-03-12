@@ -13,14 +13,15 @@
 					background: #fff;
 			}
 			
-			.menu ul {border-bottom: 1px solid #eee;font-size: 14px;list-style: none;
+			.menu ul {position:relative;
+                      list-style: none;
 				
 			}
 			.menu li {
-border-bottom: 1px solid #eee;font-size: 14px;list-style: none;
+list-style:none;
 			}
 			
-			.menu li:before {
+			.menu li:before {left:0px;width:4px;
                     background: url(pic/sprite.png) no-repeat left top;
 						content: '';
 	
@@ -42,7 +43,8 @@ border-bottom: 1px solid #eee;font-size: 14px;list-style: none;
 					
 			}
 			
-			.menu li li {
+			.menu li li:before { background-position: -21px 0;
+
 					
 			}
 	</style>
