@@ -3,37 +3,64 @@
 <head>
 		<meta charset="UTF-8">
 		<title>Оформление вертикального меню</title>
-		<style>
+		<style>			
+            .menu li li:before {
+                    font-family: FontAwesome;
+                    content: "\f192";
+                    background-position: 0px -16px;
+                    left: 20px;
+                    margin-left: -20px;
+					
+			}
+            .menu li:before {
+
+                    left: 22px;
+                    width: 4px;
+                            no-repeat left top;
+                    font-family: FontAwesome;
+                    content: "\f146";
+                    height: 14px;
+                    width: 15px;
+                    position: absolute;
+			}
 			html {
 					background: #f0f0f0;
 			}
 			
-			.menu {
+			.menu { 
+                    padding: 1px 3px 6px 7px;
 					width: 200px;
 					background: #fff;
 			}
 			
 			.menu ul {
-					
+                    position:relative;
+                    list-style: none;
+				
+			}
+			.menu li {
+                    list-style:none;
 			}
 			
-			.menu li {
-					
-			}
+
 			
 			.menu li a {
+                    color:#5276a1;
 					
 			}
 			
-			.menu li a:hover {
-					
-			}
 			
 			.menu li ul {
+                    margin-bottom: 12px;
 					
 			}
 			
-			.menu li li {
+
+			.menu li li { 
+                    margin-left: -20px;
+					
+			}
+			.menu li a:hover {
 					
 			}
 	</style>
