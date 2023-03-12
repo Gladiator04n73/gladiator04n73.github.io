@@ -13,13 +13,20 @@
 					background: #fff;
 			}
 			
-			.menu ul {
-					list-style: url("pic/minus.gif");
+			.menu ul {border-bottom: 1px solid #eee;font-size: 14px;list-style: none;
+				
+			}
+			.menu li {
+border-bottom: 1px solid #eee;font-size: 14px;list-style: none;
 			}
 			
-			.menu li {
-                    list-style: url(pic/point.gif);
-					
+			.menu li:before {
+                    background: url(pic/sprite.png) no-repeat left top;
+						content: '';
+	
+	height: 20px;
+	width: 20px;
+	position: absolute;
 			}
 			
 			.menu li a {
