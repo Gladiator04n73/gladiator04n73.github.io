@@ -11,3 +11,13 @@ h1,h2 {
 em {
     color: green;
   }
+  @media print {
+    body {
+    background:none;
+      color: black;   
+  }
+    h1{
+      color: black;  
+    }
+  head {display:none;}
+  }
