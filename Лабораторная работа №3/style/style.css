@@ -1,24 +1,26 @@
 body {
-    text-align: right;
-    background: black;
-    color: white;
-  }
+  text-align: right;
+  background: black;
+  color: white;
+}
 h1,h2 {
-    text-align: right;
-    color: red;
-    font-family: arial;
-    
-  }
+  text-align: right;
+  color: red;
+  font-family: arial;
+}
 em {
-    color: green;
+  color: green;
+}
+@media print {
+  em {
+  color: black;
+}
+  body {
+  background:none;
+    color: black;   
+}
+  h1, h2{
+    color: black;  
   }
-  @media print {
-    body {
-    background:none;
-      color: black;   
-  }
-    h1{
-      color: black;  
-    }
-  head {display:none;}
-  }
+title {display:none;}
+}
