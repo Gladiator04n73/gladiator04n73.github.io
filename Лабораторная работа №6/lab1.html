@@ -5,7 +5,20 @@
 <title>Главная страница</title>
 <link type="text/css" rel="stylesheet" href="css/main.css">
 <style>
-
+     ul {
+        list-style: none;
+    }
+    li:before {
+                    left: 25px;
+                    width: 4px;
+                    content: url(pic/plus.gif);
+                    height: 14px;
+                    width: 15px;
+                    position: absolute;
+			}
+    li a {
+        color: #5578A1;
+    }
     #container {
     width: 800px;
     }
@@ -15,7 +28,7 @@
     background: #CCDDEE;
     }
     #outer {
-    margin: 10px 10px 10px 0px;
+    margin: 0px 10px 10px 0px;
     height: 200px;
     }
     #inner {
@@ -31,17 +44,18 @@
     }
     #right {
     width: 200px;
-    height: 200px;
+    height: 195px;
     margin: 10px 0px 10px 10px;
     background: #E1E3F4;
     float: right;
+    padding: 5px 0 0px 8px;
     }
     #center {
     margin: 11px 10px 0px 10px;
     }
     #footer {
     width: 790px;
-    margin-top: 32px;
+    margin-top: 20px;
     height: 80px;
     background: #DDCCEE;
     /*.clearfix::after {
