@@ -5,7 +5,8 @@
 <title>Главная страница</title>
 <link type="text/css" rel="stylesheet" href="css/main.css">
 <style>
-     ul {
+<style>
+    ul {
         list-style: none;
     }
     li:before {
@@ -23,46 +24,40 @@
     width: 800px;
     }
     #header {
-    width: 790px;
+ 
     height: 80px;
     background: #CCDDEE;
     }
     #outer {
-    margin: 0px 10px 10px 0px;
-    height: 200px;
+    height: 190px;
     }
-    #inner {
-    height: 0px;
-    display: inline-block;
-    }
+
     #left {
     width: 200px;
     height: 200px;
-    margin: 10px 10px 10px 0;
+    margin: 0px 10px 10px 0;
     background: #E0EDCB;
     float: left;
     }
     #right {
     width: 200px;
     height: 195px;
-    margin: 10px 0px 10px 10px;
     background: #E1E3F4;
     float: right;
-    padding: 5px 0 0px 8px;
+    padding: 5px 0px 0px 10px;
     }
     #center {
     margin: 11px 10px 0px 10px;
     }
     #footer {
-    width: 790px;
     margin-top: 20px;
     height: 80px;
     background: #DDCCEE;
-    /*.clearfix::after {
+    .clearfix::after {
     content: "";
     display: table;
     clear: both;
-    }*/
+    }
 
 
 }
@@ -71,7 +66,7 @@
 <body>
 <div id="container">
 	<div id="header"></div>
-	<div id="outer">
+	<div id="outer" class="clearfix">
 		<div id="inner">
 			<div id="left">
 				<ul>
