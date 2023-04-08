@@ -5,26 +5,27 @@
 <title>Использование float при построении колонок</title>
 <style>
 	div{
-		display: inline-block;
+	display: block;
+  	float: left;
 	}
 	#left{
 	float: left;
 	background:#ccf;
-	margin: 0 1.5%;
-    width: 15%;
+  	width: 200px;
+  	margin-right: 15px;
 }
 	#right{
 	float: right;
 	background:#fcc;
-	margin: 0 1.5%;
-    width: 15%;
+  	width: 200px;
+  	margin-left: 15px;
+
 }
 	#center{
-	margin-left: 260px;
-	margin: 0 1.5%;
-    width: 60%;
+  	width: -webkit-calc(100% - 200px - 200px - 15px - 15px);
+  	width: -moz-calc(100% - 200px - 200px - 15px - 15px);
+  	width: calc(100% - 200px - 200px - 15px - 15px);
 	background:#cfc;
-	
 }
 </style>
 </head>
