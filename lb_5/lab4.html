@@ -4,24 +4,28 @@
 <meta charset="utf-8">
 <title>Использование flex при построении колонок</title>
 <style>
-    div {
+ body{
     display:flex;
-    flex-direction: row   
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px calc(1rem - 1px);
+    }
+    div {
     }
 	#left{
-    float:left;    
     width: 200px;
 	background:#ccf;
+    order: -1;
 	}
 	#right{
-    float:right; 
     width: 200px;
 	background:#fcc;
+    order: 1;
 	}
 	#center{
-    margin-left: 341px;
     width: 600px;
 	background:#cfc;
+    order: 0;
 	}
 </style>
 </head>
