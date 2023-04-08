@@ -4,9 +4,9 @@ body {
   color: white;
 }
 h1,h2 {
+  font-family: 'Roboto', sans-serif;
   text-align: right;
   color: red;
-  font-family: arial;
 }
 em {
   color: green;
@@ -20,6 +20,7 @@ em {
     color: black;   
 }
   h1, h2{
+    
     color: black;  
   }
 title {display:none;}
@@ -27,4 +28,4 @@ title {display:none;}
 strong {
   font-family: 'Caveat', cursive;
 }
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@100&display=swap');
