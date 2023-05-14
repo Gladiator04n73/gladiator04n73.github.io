@@ -86,11 +86,17 @@ body{
 </div>
 
 <div id="JS">
-<div id="h1" class="h">Язык JavaScript</div>
-<details>
- <summary>Лабораторная работа №1</summary>
-  <p><a href="js/lb_1/lab1.html">Управляющие конструкции</a></p>
-</details>
-</div>
+  <div id="h1" class="h">Язык JavaScript</div>
+  
+  <details open="">
+   <summary>Лабораторная работа №1</summary>
+    <p><input id="button1" type="button" value="Управляющие конструкции"></p>
+  </details>
+      <script>
+  document.querySelector('#button1').onclick=function () {
+  alert('huj');
+  }
+  </script>
+  </div>
 </body>
 </html>
