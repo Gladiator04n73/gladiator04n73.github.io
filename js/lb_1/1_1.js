@@ -1,5 +1,5 @@
 "use strict";
-onclick=function vozrast_pol() {
+function vozrast_pol() {
     let age,gender;
 age = prompt('Сколько вам лет?');
 gender = prompt('Вы мужчина или женщина?');
