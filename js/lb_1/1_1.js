@@ -51,6 +51,13 @@ function crow() {
 function hundred() {
     let num;
     num = prompt('Введите число большее 100');
-    while (num <= 100 ) num = prompt('Введите число большее 100');
+    while (num <= 100 ) 
+        num = prompt('Введите число большее 100');
+
         if (num > 100) alert(num)
 }
+window.onkeydown = function( event ) {
+    if ( event.keyCode == 27 ) {
+        console.log( 'escape pressed' );
+    }
+};
