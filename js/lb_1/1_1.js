@@ -76,7 +76,6 @@ function simple() {
     for (let j = 2; j < i; j++) {
         if (i % j == 0) continue easy;
     }
-    console.log()
     console.log( i );
     }
 }
