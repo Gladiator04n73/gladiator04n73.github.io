@@ -51,7 +51,7 @@ function crow() {
 function hundred() {
     let num;
     num = prompt('Введите число большее 100');
-    while ((num <= 100)||(event.keyCode == 27) ) 
+    while ((num <= 100)||(event.keyCode != 27) ) 
         num = prompt('Введите число большее 100');
         if (num > 100) alert(num)
 }
