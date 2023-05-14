@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+<style>
+body{
+    display: grid;
+    grid-template-columns: [one] 220px [two] 300px [three] 200px;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+}
+#h1{    
+    padding-bottom: 43px;
+}
+.h{
+    font-size: 30px;
+    padding: 10px 10px 10px 10px;   
+}
+#left{
+    padding: 10px 10px 10px 10px;
+	  background:#ccf;
+    width: 200px;
+    grid-column-start: 1;
+    grid-column-end: two;      
+}
+#right{
+    padding: 10px 10px 10px 10px;
+	  background:#fcc;
+    width: 200px;
+    grid-column-start: three;
+    grid-column-end: 3;
+    grid-row-start: 1;       
+}
+#center{
+    padding: 10px 10px 10px 10px;
+	background:#cfc;
+    width: 200px;
+    grid-column-start: two;
+    grid-column-end: three;   
+}
+</style>
   <meta charset="utf-8">
   <title>Зенкин Максим Викторович 11ПИфм</title>
 </head>
 <body>
+<div id="left"><div id="h" class="h">Разработка и дизайн веб-сайтов</div>
 <details>
  <summary>Лабораторная работа №1</summary>
   <p><a href="lb_1/lab1.html">Основные элементы языка HTML</a></p>
@@ -52,5 +90,18 @@
   <summary>Лабораторная работа №7</summary>
    <p><a href="lb_7/lab1.html">Работа с фреймворком Bootstrap</a></p>
  </details>
+</div>
+
+<div id="center">
+<div id="h1" class="h">Язык JavaScript</div>
+<details>
+ <summary>Лабораторная работа №1</summary>
+  <p><a href="lb_1/lab1.html">Основные элементы языка HTML</a></p>
+  <p><a href="lb_1/lab2.html">Внутренняя навигация</a></p>
+  <p><a href="lb_1/lab3.html">Гиперссылки</a></p>
+  <p><a href="lb_1/lab4.html">Изображения</a></p>
+  <p><a href="lb_1/lab5.html">Карты-изображения</a></p>
+</details>
+</div>
 </body>
 </html>
