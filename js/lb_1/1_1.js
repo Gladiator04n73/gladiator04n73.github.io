@@ -48,11 +48,21 @@ function crow() {
     alert(message);
 }
 
+function onKeydown(event, num) {
+    if (event.code === 'Escape') {
+        num = null;
+        return;
+    }
+}
 function hundred() {
     let num;
     do {
         num = prompt('Введите число большее 100');
-        if (num === null) return; // выход из функции, если нажали "Отмена" или "Esc"
+        if (num === null) return; // выход из функции, если нажали "Отмена"
+        if (num === '') continue; // продолжаем цикл, если введена пустая строка
     } while (num <= 100);
     alert(num);
+    document.addEventListener('keydown', function(event) {
+        onKeydown(event, num);
+    });
 }
