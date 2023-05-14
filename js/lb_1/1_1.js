@@ -50,8 +50,9 @@ function crow() {
 
 function hundred() {
     let num;
-    num = prompt('Введите число большее 100');
-    while ((num <= 100)||(event.keyCode != 27) ) 
+    do {
         num = prompt('Введите число большее 100');
-        if (num > 100) alert(num)
+        if (num === null) return; // выход из функции, если нажали "Отмена" или "Esc"
+    } while (num <= 100);
+    alert(num);
 }
