@@ -21,3 +21,29 @@ if ((age>=0 && age <= 17)&&(gender=='мужчина' || gender=='женщина'
     alert('Да кто ты такой?')
 }
 }
+
+function crow() {
+    let num, message, mod;
+    num = +prompt('Введите количество ворон', 1);
+    mod = num % 100;
+    if (mod > 10 && mod < 20 ) {
+        message = `На ветке сидит ${num} ворон`;
+    } 
+    else {
+        switch (num % 10) {
+            case 1:
+            message = `На ветке сидит ${num} ворона`;
+                break;
+            case 2:
+            case 3:
+            case 4:
+            message = `На ветке сидит ${num} вороны`;
+                break;
+            default:
+                message = `На ветке сидит ${num} ворон`;
+                break;
+        }
+
+    }
+    alert(message);
+}
