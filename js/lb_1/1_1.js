@@ -1,4 +1,5 @@
 "use strict";
+document.querySelector('#button1').onclick=function () {
 let age,gender;
 age = prompt('Сколько вам лет?');
 gender = prompt('Вы мужчина или женщина?');
@@ -18,4 +19,5 @@ if ((age>=0 && age <= 17)&&(gender=='мужчина' || gender=='женщина'
     alert('Вам пора на пенсию!');
 }  else {
     alert('Да кто ты такой?')
+}
 }
