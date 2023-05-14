@@ -66,3 +66,18 @@ function hundred() {
         onKeydown(event, num);
     });
 }
+
+function simple() {
+    let n;
+    n = prompt('Введите число большее чем 2');
+    easy:
+    for (let i = 2; i <= n; i++) { 
+    
+    for (let j = 2; j < i; j++) {
+        if (i % j == 0) continue easy;
+    }
+    console.log()
+    console.log( i );
+    }
+}
+
