@@ -1,6 +1,7 @@
 "use strict";
-document.querySelector('#button1').onclick=function () {
 let age,gender;
+document.querySelector('#button1').onclick=function vozrast_pol() {
+
 age = prompt('Сколько вам лет?');
 gender = prompt('Вы мужчина или женщина?');
 if ((age>=0 && age <= 17)&&(gender=='мужчина' || gender=='женщина')){
