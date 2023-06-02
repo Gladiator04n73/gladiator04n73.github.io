@@ -3,22 +3,20 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Text</title>
+	<title>Текст</title>
 </head>
 <body>
 	<input type="button" id="hider" value="Спрятать текст">
 	<div id="text">Текст</div>
 
 <script>
-  const input=document.querySelector('input');
-  hider.onclick = function() {
-    text.innerHTML=" ";
-    if (input.id=="hider") {input.id="shower";}
-  };
-  shower.onclick = function() {
-    text.innerHTML="Текст";
-    if (input.id=="shower") {input.id="hider";}
-  };
+	let c=0;
+  	const input=document.querySelector('input');
+  	hider.onclick = function() 
+	{
+	if (c==0) {text.innerHTML=" "; c=1;}
+	else {text.innerHTML="Текст"; c=0;}
+	}
 </script>
 </body>
 </html>
