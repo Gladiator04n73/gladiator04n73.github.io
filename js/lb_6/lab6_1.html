@@ -7,11 +7,19 @@
 </head>
 <body>
 	<input type="button" id="hider" value="Спрятать текст">
-
 	<div id="text">Текст</div>
 
-	<script>
-    /* ваш код */
-	</script>
+<script>
+  const input=document.querySelector('input');
+  hider.onclick = function() {
+    text.innerHTML=" ";
+    if (input.id=="hider") {input.id="shower";}
+  };
+  shower.onclick = function() {
+    e = document.getElementById("shower");
+    text.innerHTML="Текст";
+    if (input.id=="shower") input.id="hider";
+  };
+</script>
 </body>
 </html>
