@@ -45,10 +45,11 @@
 	  	</ul>
 	</div>
     <script>
-    function toggleMenu() {
-      var menu = document.querySelector('.menu');
-      menu.classList.toggle('open');
-    }
+        let menu = document.getElementById('sweet');
+        let Elem = menu.querySelector('.title');
+        Elem.onclick = function() {
+          menu.classList.toggle('open');
+        };
     </script>
 </body>
 </html>
