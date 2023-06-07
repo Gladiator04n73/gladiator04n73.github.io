@@ -2,26 +2,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>select</title>
+    <title>Document</title>
 </head>
-<body cz-shortcut-listen="true">
+
+<body>
     <select id="music">
         <option value="Rock">Рок</option>
         <option value="Blues" selected="">Блюз</option>
-        <option value="Classic">Классика</option></select>
-
+    <option value="classic">Классика</option></select>
     <script>
-  
-        let selectedOption = music.options[music.selectedIndex];
-        console.log( music.options[music.selectedIndex] );
-        console.log( selectedOption.value );
-        console.log( selectedOption.text );//вывод значения и текста текущей опции
+        let option = music.options[music.selectedIndex];
+        console.log(option.value);
+        console.log(option.text);
 
-        let newOption = new Option("Классика", "Classic");
-        music.append(newOption);//добавление опции
+        let newoption = new Option("Классика", "classic");
+        music.append(newoption);
 
-        newOption.selected = true; // выбор опции
-
+        newoption.selected = true;
     </script>
+
 
 </body></html>
