@@ -1,5 +1,6 @@
 "use strict";
 function books(){
+    console.clear()
     let book1 = {};
     book1.title = "The Bazaar of Bad Dreams";
     book1.pubYear = 2016;
@@ -44,6 +45,7 @@ function books(){
     console.log(isEmpty(book3));
         }
 function adClas(){
+    console.clear()
             let obj = {
             className: 'open menu',
         
@@ -68,6 +70,7 @@ function adClas(){
         };
      }
 function people(){
+    console.clear()
     let vasya = { name: "Вася", age: 23 };
 let masha = { name: "Маша", age: 18 };
 let vova = { name: "Вова", age: 12 };
