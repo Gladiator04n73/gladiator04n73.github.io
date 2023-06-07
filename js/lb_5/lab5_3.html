@@ -1,5 +1,6 @@
-<html lang="ru">
-<head> <title>Дерево из элементов ul/li</title>
+<html lang="ru"><head>
+	<meta charset="UTF-8">
+	<title>List</title>
 </head>
 <body>
   <ul>
@@ -41,13 +42,14 @@
   </ul>
 
   <script>
-let lis = document.getElementsByTagName('li');
-for (let i = 0; i < lis.length; i++) {
-  let nestedLis = lis[i].querySelectorAll('li').length;
-  let text = lis[i].firstChild.textContent.trim();
-  let span = document.createElement('span');
-  span.textContent = text + " - " + nestedLis;
-  lis[i].replaceChild(span, lis[i].firstChild);
-}
+	  let li = document.getElementsByTagName("li");
+
+        for (let i = 0; i < li.length; i++) {
+            let title = li[i].firstChild.textContent.trim();
+            let qty = li[i].getElementsByTagName("li").length;
+
+            console.log(title + " - " + qty);
+        }
   </script>
+
 </body></html>
