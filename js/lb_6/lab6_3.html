@@ -64,6 +64,15 @@
 	      <button class="remove-button">[x]</button>
 	    </div>
 	</div>
-
+	<script>
+		let hideButtons = document.querySelectorAll('.remove-button');
+	  
+		hideButtons.forEach(function(button) { // Перебираем кнопки и на каждую добавляем обработчик события "click"
+		  button.addEventListener('click', function(event) {
+			let message = event.target.parentNode;// Получаем родительский елемент кнопки (это "li" соответствующего сообщения)
+			message.style.display = 'none';// Прячем сообщение, устанавливая ему стиль "display:none"
+		  });
+		});
+	  </script>
 </body>
 </html>

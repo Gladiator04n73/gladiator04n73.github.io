@@ -45,13 +45,10 @@
 	  	</ul>
 	</div>
     <script>
-        let c=0;
-          const input=document.querySelector('span');
-          title.onclick = function() 
-        {
-        if (c==0) {title.display(none); c=1;}
-        else {text.innerHTML="Текст"; c=0;}
-        }
+    function toggleMenu() {
+      var menu = document.querySelector('.menu');
+      menu.classList.toggle('open');
+    }
     </script>
 </body>
 </html>

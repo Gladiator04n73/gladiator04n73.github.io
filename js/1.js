@@ -81,19 +81,17 @@ function simple() {
 }
 
 function catdog() {
-    let num = prompt("Введите количество строк: ");
-    let k = Math.floor(num / 5);
-    let l = num - 5 * k;
-    let one = "dog dog dog cat cat dog";
-    let two = "dog dog cat cat dog dog";
-    let three = "dog cat cat dog dog dog";
-    let four = "cat cat dog dog dog dog";
-    let five = "cat dog dog dog dog cat";
-    var list = [one, two, three, four, five]
-    for (let i = 1; i <= k; i++) {
-        for (let j = 0; j < 5; j++) console.log(list[j]);
-    }
-    for (let j = 0; j < l; j++) console.log(list[j]);
+
+     const n = prompt("Введите целое число строк");
+     const s1 = "dog dog dog cat cat dog";
+     const s2 = "dog dog cat cat dog dog";
+     const s3 = "dog cat cat dog dog dog";
+     var str = [s1, s2, s3];
+     for (let i = 0; i < n; i++) {
+         console.log(str[i%3]);
+         }
+ 
+   
 }
 
 
