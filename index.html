@@ -12,7 +12,18 @@ details summary::marker {
   }
   a{color:white;}
   body{background-image:url("1.jpg");
+  background-position: center center;
+  
+  /* Background image doesn't tile */
   background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
       display: grid;
       grid-template-columns: [one] 220px [two] 300px;
       grid-template-rows: 0fr;
