@@ -1,6 +1,6 @@
 "use strict";
 function vozrast_pol() {
-    console.clear()
+
     let age,gender;
 age = prompt('Сколько вам лет?');
 gender = prompt('Вы мужчина или женщина?');
@@ -24,7 +24,7 @@ if ((age>=0 && age <= 17)&&(gender=='мужчина' || gender=='женщина'
 }
 
 function crow() {
-    console.clear()
+
     let num, message, mod;
     num = +prompt('Введите количество ворон', 1);
     mod = num % 100;
@@ -57,7 +57,7 @@ function onKeydown(event, num) {
     }
 }
 function hundred() {
-    console.clear()
+
     let num;
     do {
         num = prompt('Введите число большее 100');
@@ -71,7 +71,7 @@ function hundred() {
 }
 
 function simple() {
-    console.clear()
+
     let n;
     n = prompt('Введите число большее чем 2');
     easy:
@@ -85,7 +85,7 @@ function simple() {
 }
 
 function catdog() {
-    console.clear()
+
      const n = prompt("Введите целое число строк");
      const s1 = "dog dog dog cat cat dog";
      const s2 = "dog dog cat cat dog dog";

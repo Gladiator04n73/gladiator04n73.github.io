@@ -1,6 +1,6 @@
 "use strict";
 function books(){
-    console.clear()
+
     let book1 = {};
     book1.title = "The Bazaar of Bad Dreams";
     book1.pubYear = 2016;
@@ -45,7 +45,7 @@ function books(){
     console.log(isEmpty(book3));
         }
 function adClas(){
-    console.clear()
+
             let obj = {
             className: 'open menu',
         
@@ -73,7 +73,7 @@ function adClas(){
         console.log(obj.removeClass('menu'));
     }
 function people(){
-    console.clear()
+
     let vasya = { name: "Вася", age: 23 };
 let masha = { name: "Маша", age: 18 };
 let vova = { name: "Вова", age: 12 };
@@ -82,7 +82,7 @@ people.sort((a, b) => a.age - b.age);
 console.log(people);
 }
 function datas(){
-    console.clear()
+
     function getSecondsToday() {// функция для получения количества секунд с начала текущего дня
         let now = new Date(); // получаем текущую дату и время
         let start = new Date(now.getFullYear(), now.getMonth(), now.getDate()); // создаем новую дату, устанавливая время в начало текущего дня
