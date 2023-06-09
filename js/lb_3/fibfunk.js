@@ -1,19 +1,21 @@
-"use strict;"
-export function fib(n) {
-    let a = 0n;
-    let b = 1n;
+'use strict';
 
-    if (n === 0) {
-        return a;
-    } else if (n === 1) {
-        return b;
-    } else {
-        for (let i = 2; i <= n; i++) {
+export function fib(n) {
+    let a = BigInt(1); // первое число Фиббоначи
+    let b = BigInt(1); // второе число Фиббоначи
+    if (n == BigInt(0))
+    {
+        return BigInt(0); //возвращаем нуль при n=0
+    }
+    else
+    {
+        //алгоритм нахождения чисел Фиббоначи 
+        for (let i = BigInt(3); i <= n; i++) 
+        {
             let c = a + b;
             a = b;
             b = c;
         }
-
         return b;
     }
 }
