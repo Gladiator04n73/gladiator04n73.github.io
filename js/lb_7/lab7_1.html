@@ -1,25 +1,26 @@
-<html lang="ru"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-
 <body>
-    <select id="music">
-    <option value="Rock">Рок</option>
-    <option value="Blues">Блюз</option>
-    <option value="classic">Классика</option></select>
-    <script>
-        let option = music.options[music.selectedIndex];
-        console.log(option.value);
-        console.log(option.text);
-
-        let newoption = new Option("Классика", "classic");
-        music.append(newoption);
-
-        newoption.selected = true;
-    </script>
-
-
-</body></html>
+    <select id="janr">
+<option value="Rock">Рок</option>
+<option value="Blues" selected>Блюз</option>
+</select>
+<script>
+    // 1)
+    let selectOption = janr.options[janr.selectedIndex];
+    console.log(selectOption.value);
+    console.log(selectOption.text);
+  
+    // 2)
+    let newOption = new Option("Классика", "classic");
+    janr.append(newOption);
+  
+    // 3)
+    newOption.selected = true;
+  </script>
+</body>
+</html>
